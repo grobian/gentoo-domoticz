@@ -13,7 +13,10 @@ SLOT="0"
 KEYWORDS="-* ~amd64"
 IUSE="systemd"
 
-DEPEND="net-libs/libcurl-gnutls:4"
+DEPEND="net-libs/libcurl-gnutls:4
+	dev-libs/libusb-compat:0
+	dev-libs/openssl:0
+	sys-libs/zlib:0"
 RDEPEND="${DEPEND}
 	!app-misc/domoticz"
 BDEPEND=""
